@@ -1,0 +1,64 @@
+
+<div class="gora">
+
+    <div class="przycisk">
+        <button (click)="toggle()" class="hamburger" id="bt"><span>toggle menu</span></button>
+        <!--UKRYTE MENU -->
+        <ng-container *ngIf="show">
+          <div class="tomenudiv">
+          <ul id="tomenu">
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+          </ul></div>
+        </ng-container>
+    </div>
+
+
+    <div class="nadusers">
+        <span> Thursday</span>
+        <p>24 December</p>
+        <span>2020</span>
+    </div>
+
+    <div class="podprzyciskiem">
+
+
+        <div class="listarout">
+            <img src="../assets/images/users.svg"><p class="users">Users</p>
+            <!-- LISTA ZE ZMIANA TREŚCI -->
+            <nav>
+            <ul class="users">
+              <li> <a class="button" routerLink="/users-list" routerLinkActive="activebutton"> Users List</a></li>
+              <li> <a class="button" routerLink="/user-edit" routerLinkActive="activebutton"> User Edit</a></li>
+              <li> <a class="button" routerLink="/roles-and-permissions" routerLinkActive="activebutton"> Roles and Permissions</a></li>
+              <li> <a class="button" routerLink="/settings" routerLinkActive="activebutton"> Settings</a></li>
+            </ul>
+            </nav>
+        
+        </div>
+    </div>
+
+</div>
+
+ 
+<div class="activeblockedconfirmedwarsztat">
+
+    <div class="active"><span>ACTIVE</span> <bR> <B>245</B></div>
+    <div class="blocked"><span>BLOCKED</span> <bR> <B>245</B></div>
+    <div class="confirmed"><span>CONFIRMED</span> <bR> <B>245</B></div>
+    
+      
+    <div class="dzwonek"><img src="../assets/images/dzwonek.svg"></div>
+    <div class="login"><img src="../assets/images/avatar.png"> WarsztatA12 <img src="../assets/images/strzalka.svg"></div>
+
+</div>
+
+
+<div class="srodek">
+  <!-- MIEJSCE ŁĄDOWANIA TREŚCI -->
+  <router-outlet></router-outlet>
+</div>

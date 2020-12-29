@@ -1,0 +1,24 @@
+
+<table class="heroes" >
+
+  <tr class="first"><th>Object</th><th>Action</th></tr>
+  <tr class="arrayso"><td>Movies</td><td></td></tr>
+
+  <tr *ngFor="let hero of heroes; let i=index"
+    [class.selected]="hero === selectedHero"
+     >
+
+ 
+    <td class="heroname" (click)="onSelect(hero,i)" >{{hero.name}}</td> 
+    <td class="heroprzyciski" >
+      <div class="przyciskiwtab">
+      <button class="create" (click)="sprawdzto(i)" [ngClass]="{'truelubfalse':prawdafalsz}" >Create</button>
+      <button class="reac" >Reac</button>
+      <button class="update">Update</button>
+      <button class="create" >Delete</button>
+    </div>
+    </td>
+  </tr>
+
+
+</table>

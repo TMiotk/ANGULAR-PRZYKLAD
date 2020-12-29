@@ -1,0 +1,515 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .heroes li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .heroes li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  
+
+.delate{
+    width: 97px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-delate-przyciska);
+    color: white;
+    font-weight: bold;
+    margin-left: 34px;
+}
+
+.block{
+    width: 127px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-block-przyciska);
+    margin-left: 34px;
+    font-weight: bold;
+    color: white;
+}
+.setpassword{
+    width: 161px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-set-password-przyciska);
+    font-weight: bold;
+    color: white;
+    margin-left: 34px;
+}
+.save{
+    width: 106px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-save-przyciska);
+    font-weight: bold;
+    color: white;
+    margin-left: 34px;
+}
+
+
+.lewastrona span{
+    width: 88px;
+    height: 13px;
+    font-family: Rubik;
+    font-size: 12px;
+    color: #6a6d75;
+    text-decoration: rgb(106, 109, 117);
+}
+.lewastrona p{
+    width: 144px;
+    height: 23px;
+    font-family: Rubik;
+    font-size: 22px;
+    color: #325395;
+    text-decoration: rgb(50, 83, 149);
+}
+
+
+.gornaczesc{
+    width: 100%;
+    float:left;
+}
+.gornaczesc2{
+    width: 100%;
+    float: left;
+}
+
+.lewastrona{
+    float:left;
+    margin-top: 10px;
+    margin-left:20px;
+}
+.prawastrona{
+    float: right;
+    margin-right: 38px;
+    margin-top: 15px;
+}
+
+.lewypanel{
+    width: 946px;
+    height: 44px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-left:30px;
+    fill: #ffffff;
+    left: 301px;
+    top: 145px;
+    float: left;
+}
+.prawypanel{
+    width: 530px;
+    height: 44px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    fill: #ffffff;
+    left: 1265px;
+    top: 145px;
+    float: right;
+}
+
+.modal-body p{ 
+    width: 400px;
+}
+
+body { font-family: sans-serif; }
+#confirmBox
+{
+    display: none;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#confirmBox .button {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+#confirmBox .button:hover
+{
+    background-color: #ddd;
+}
+#confirmBox .message
+{
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.formularz{
+    width: 264px;
+    height: 36px;
+    border-radius: 2px;
+    fill: #000000;
+    stroke-width: 1;
+}
+label{
+    float:left;
+
+
+}
+form{
+    width: 264px;
+}
+
+hr{
+    width: 597px;
+    height: 1px;
+    fill: #000000;
+    stroke-width: 1;
+}
+
+p{
+    width: auto;
+    height: 16px;
+    font-family: Rubik;
+    font-size: 16px;
+    color: #325395;
+    text-decoration: rgb(50, 83, 149);
+}
+
+.dodajfote{
+    width: 264px;
+    height: 120px;
+    border-radius: 2px;
+    fill: #ffffff;
+    stroke-width: 1;
+    border: 1px solid rgb(153, 152, 152);
+    text-align: center;
+}
+.dodajfote img{
+    margin-top:15px;
+}
+.dodajfote p{
+    width: 72px;
+    height: 13px;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-family: Rubik;
+    font-size: 12px;
+    color: #5e92fc;
+    text-decoration: rgb(94, 146, 252);
+}
+.dodajfote span{
+    width: 193px;
+    height: 12px;
+    font-family: Rubik;
+    font-size: 11px;
+    color: #9b9fa8;
+    text-decoration: rgb(155, 159, 168);
+}
+
+.prawa{
+    margin-left: 240px;
+}
+.kraje{
+    position: absolute;
+    margin-top:20px;
+    margin-left:20px;
+   top: 300px;
+}
+.prawa2{
+    margin-left: 240px;
+    position: absolute;
+    top: 400px;
+}
+.prawa2formc{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+
+.formularz2{
+    width: 264px;
+    height: 36px;
+    border-radius: 2px;
+    margin-top:60px;
+    fill: #000000;
+    stroke-width: 1;
+}
+
+.lewa2{
+    position:absolute;
+    float:left;
+    top: 400px;
+}
+
+.zformularzy{
+    position: absolute;
+    float:left;
+    top: 600px;
+}
+
+.nastepnaczesc{
+    position: absolute;
+    top: 800px;
+    
+}
+
+mat-slider {
+    width: 300px;
+  }
+
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+  
+  //to tabsy
+  .tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    border-bottom: 2px solid blue;
+  }
+  
+  .tabcontent {
+    display: block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tablinks:focus {
+    border-bottom:1.5px solid blue;
+}
+
+  div.active{
+    background-color: yellow;
+  }
+
+  .role p{
+    position: absolute;
+    width: 40px;
+    height: 18px;
+    left: 20px;
+    top: 130px;
+    font-family: Rubik;
+    font-size: 18px;
+    color: #325395;
+    text-decoration: rgb(50, 83, 149);
+  }
+  .role p span{
+    position: absolute;
+    width: 70px;
+    height: 16px;
+    font-family: Rubik;
+    font-size: 16px;
+    color: #5e92fc;
+    text-decoration: rgb(94, 146, 252);
+  }
+
+  hr.lina{
+    width: 914px;
+    height: 44px;
+    fill: #000000;
+    stroke-width: 1;
+  }
+
+  .create{
+    width: 72px;
+    height: 26px;
+    border-radius: 2px;
+    background-color:rgb(244,244,245);
+    border:none;
+  }
+  .reac{
+    width: 77px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: rgb(203,220,254);
+    border:none;
+  }
+.update{
+    width: 77px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: rgb(254,233,186);
+    border:none;
+}
+.delatek{
+    width: 71px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgb(247,189,187);
+    border:none;
+}
+delete{
+    border:none !important;
+}
+
+td button p{
+    width: 32px;
+    height: 11px;
+    font-family: Rubik;
+    font-size: 11px;
+    color: #252629;
+    text-decoration: rgb(37, 38, 41);
+}
+.role table button{
+    margin-left: 10px;
+}
+
+.role table{
+    margin-top: 50px;
+    width: 100%;
+}
+.role table th{
+    padding-left: 50px;
+    border-bottom: 1px solid grey;
+}
+.role table td{
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #bab4b4;
+}
+.podlogs{
+    padding: 30px;
+}
+.le{
+    float: left;
+    margin-top:30px;
+    margin-left: 40px;
+}
+.le p{
+    margin-top:30px;
+    margin-left: 40px;
+}
+.le span{
+    margin-left:15px;
+    font-weight: bold;
+}
+.pra{
+    float: right;
+    width: 362px;
+    height: 64px;
+
+}
+.pra select{
+    width: 362px;
+    height: 34px;
+
+}
+
+.lewa{
+    margin-top:30px;
+}
+.lewaforma{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.lewa2{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.heroes{
+    padding: 15px;
+}
+
+tr{
+    margin-left: 50px;
+
+}
+table.heroes{
+    width: 100%;
+}
+.przyciskiwtab{
+    margin-right:20px;
+}
+
+.arrayso{
+    background-color: #f3f4f5;
+}
+table.heroes th{
+    border-top:1px solid rgb(214, 213, 213);
+    border-bottom:1px solid gray;
+    padding-left:60px;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+table.heroes td.heroname{
+    width: 40%;
+}
+
+table.heroes td.heroprzyciski{
+    width:60%;
+}
+table.heroes td{
+    border-bottom: 1px solid rgb(189, 188, 188);
+    padding: 15px;
+    padding-left:60px;
+}
+table.heroes td button{
+    margin-left: 20px;
+}
+
+.prawda{
+    background-color: rgb(133, 133, 114);
+}
+.truelubfalse{
+    background-color: yellow;
+}

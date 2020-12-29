@@ -1,0 +1,134 @@
+<div class="gornaczesc">
+
+  <div class="lewastrona">
+    <span> Users/User Edit</span>
+    <p>Hugh Jackman</p>
+  </div>
+
+  <div class="prawastrona">
+    <button (click)="delete()" class="delate">DELATE</button>
+    <button (click)="open(content)" class="block">BLOCK</button>
+    <button (click)="setpassword()" class="setpassword">SET PASSWORD</button>
+    <button [formGroup]="" (click)="updateForm()" class="save">SAVE</button>
+  </div>
+
+</div>
+<!-- OKIENKO MODALNIE -->
+<ng-template #content let-c="close" let-d="dismiss" class="okienko">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Are you sure</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Please confirm if you are sure to delate this element or not</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Yes</button>
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">No</button>
+  </div>
+</ng-template>
+<!--KONIEC OKIENKA MODALNEGO-->
+
+<div class="gornaczesc2">
+      <div class="lewypanel">
+
+
+              <div class="tab">
+                <button class="tablinks" (click)="functionx1() " [ngClass]="{'active': toggles}">Logs</button>
+                <button class="tablinks" (click)="functionx2()" [ngClass]="{'active': toggles2}">Permissions</button>
+              </div>
+
+
+            <div class="role">
+                    <div class="podlogs"><div class="le">
+                        <p>Role: <span>Performer</span></p></div>
+                      <div class="pra">
+                        <label for="cars">Asign Role</label><BR>
+
+                          <ng-select class="selektormulti2" [items]="categories2"
+                          bindLabel="name"
+                          appendTo="body"
+                          [multiple]="true"
+                          [(ngModel)]="selected2">
+                          </ng-select>
+                      </div>
+                  </div>
+                <!-- ŁADOWANIE TABELKI -->
+                <app-heroes></app-heroes>
+
+            </div>
+      </div>
+
+
+
+      <div class="prawypanel">
+
+          <div class="tab">
+            <button class="tablinks" (click)="functionx3()" [ngClass]="{'active': toggles3}">Statistics</button>
+            <button class="tablinks" (click)="functionx4()" [ngClass]="{'active': toggles4}">Settings</button>
+          </div>
+
+          <div class="formularz">
+              <div class="lewa">
+                  <p>Personal Data!</p>
+                  <form [formGroup]="form" class="lewaforma">
+                    <label> Name:<BR><input type="text" [formControl]="name"  id="name" value="Tomasz" placeholder="Tomasz" required><div id="nameval"></div></label>
+                    <label> Last Name<input type="text" [formControl]="lastname" id="lastname" value="Miotk" placeholder="Miotk" required><div id="lastnameval"></div></label>
+                    <label> Birthdate<BR> <input type="text" id="datepicker" [formControl]="birthdate" placeholder="26/07/1986" class="teninput selector" required><div id="birthdayval"></div> </label>
+                  </form>
+              </div>
+
+              <div class="prawa">
+                  <div class="dodajfote">
+                      <img src="../../assets/images/obrazek.svg">
+                      <p>Upload Photo</p>
+                      <span>Drag and Drop photo or select from files</span>
+                  </div>
+                  
+                  <div class="kraje">
+                    <label class="tenlabel"> Citizenship</label>
+                    <ng-select class="selektormulti" id="tenselekt" [items]="categories"
+                                  bindLabel="name"
+                                  placeholder="Citizenship"
+                                  appendTo="body"
+                                  [multiple]="true"
+                                  [(ngModel)]="selected">
+                    </ng-select>
+                  </div>
+
+              </div>
+
+        </div>
+
+        <div class="pusty"></div>
+
+        <div class="formularz2">
+                <p>Contact Information</p><BR>
+
+              <div class="lewa2">
+                      <form [formGroup]="form" class="lewa2formb">
+                      <label>Instagram:<BR><input type="text" [formControl]="instagram" id="instagram"  value="@TomaszInstagram" placeholder="@tomaszInstagram" required><div id="instagram"></div></label>
+                      <label>Twitter:<BR> <input type="text" [formControl]="twitter"  id="twitter" value="@MiotkTwitter" placeholder="@miotktwitter" required><div id="twitter"></div> </label>
+                      </form>
+              </div>
+
+
+              <div class="prawa2">
+                      <form [formGroup]="form" class="prawa2formc">
+                      <label>Email:<BR><input [formControl]="email"  type="email" id="email" value="thomas.miotk86@gmail.com" placeholder="tomasz.miotk86@gmail.com" required><div id="emailval"></div></label>
+                      <label> Facebook:<input type="text" [formControl]="facebook" value="@tomaszmiotk" placeholder="@tomaszmiotk" id="facebook"  required><div id="facebook"></div> </label>
+                      </form>
+              </div>
+
+              <div class="zformularzy">
+                    Dane z Personal Data:<BR>
+                    {{name.value +'-'+ lastname.value +''+ birthdate.value}}<br><br>
+                    Dane z Contact Information:<BR>
+                    {{instagram.value+"-"+twitter.value+"-"+email.value+"-"+facebook.value}}<BR>
+              </div>
+        </div>
+
+      </div>
+</div>

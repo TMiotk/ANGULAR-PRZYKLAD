@@ -1,0 +1,531 @@
+.delate{
+    width: 97px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-delate-przyciska);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 34px;
+}
+
+.block{
+    width: 127px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-block-przyciska);
+    margin-left: 34px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+.setpassword{
+    width: 161px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-set-password-przyciska);
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    margin-left: 34px;
+}
+.save{
+    width: 106px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: var(--kolor-save-przyciska);
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    margin-left: 34px;
+}
+
+
+.lewastrona span{
+    width: 88px;
+    height: 13px;
+    font-family: Rubik;
+    font-size: 12px;
+    color: #6a6d75;
+    text-decoration: rgb(106, 109, 117);
+}
+.lewastrona p{
+    width: 444px;
+    height: 23px;
+    font-family: Rubik;
+    font-size: 30px;
+    color: #325395;
+    text-decoration: rgb(50, 83, 149);
+    margin-top: 0px;
+}
+
+.gornaczesc{
+    margin-top:20px;
+    margin-left:10px;
+    width: 1780px;
+    float:left;
+
+}
+.gornaczesc2{
+    width: 2000px;
+    float: left;
+}
+
+.lewastrona{
+    float:left;
+    margin-top: 10px;
+    margin-left:50px;
+}
+.prawastrona{
+    float: right;
+    margin-right: 38px;
+    margin-top: 15px;
+}
+
+.tablinks{
+    width:150px;
+}
+.lewypanel{
+    width: 1065px;
+    height: 1050px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-left:45px;
+    fill: #ffffff;
+    left: 301px;
+    top: 145px;
+    float: left;
+    border: 1px solid rgb(220, 211, 211);
+}
+.prawypanel{
+    width: 690px;
+    height: 1050px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    fill: #ffffff;
+    left: 1065px;
+    top: 145px;
+    float:left;
+    margin-left: 20px;
+    border: 1px solid rgb(189, 188, 188);
+}
+.prawastrona{
+    margin-top:10px;
+}
+.modal-body p{ 
+    width: 400px;
+}
+
+body { font-family: sans-serif; }
+#confirmBox
+{
+    display: none;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#confirmBox .button {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+#confirmBox .button:hover
+{
+    background-color: #ddd;
+}
+#confirmBox .message
+{
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.formularz{
+    width: 264px;
+    height: 36px;
+    border-radius: 2px;
+    fill: #000000;
+    stroke-width: 1;
+}
+label{
+    float:left;
+
+
+}
+form{
+    width: 264px;
+}
+
+hr{
+    width: 597px;
+    height: 1px;
+    fill: #000000;
+    stroke-width: 1;
+}
+
+p{
+    width: auto;
+    height: 16px;
+    font-family: Rubik;
+    font-size: 20px;
+    color: #325395;
+    text-decoration: rgb(50, 83, 149);
+}
+
+.dodajfote{
+    margin-left: 125px;
+    width: 274px;
+    height: 130px;
+    border-radius: 1px;
+    ill: #ffffff;
+    stroke-width: 1;
+    border: 2px solid #e5dede;
+    text-align: center;
+}
+.dodajfote img{
+    margin-top:28px;
+}
+
+.teninput{
+    background-image: url("../../assets/images/datapicker.png") no-repeat;
+}
+.dodajfote p{
+    width: 72px;
+    height: 13px;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-family: Rubik;
+    font-size: 12px;
+    color: #5e92fc;
+    text-decoration: rgb(94, 146, 252);
+}
+.dodajfote span{
+    width: 193px;
+    height: 12px;
+    font-family: Rubik;
+    font-size: 11px;
+    color: #9b9fa8;
+    text-decoration: rgb(155, 159, 168);
+}
+
+.prawa{
+    margin-left: 240px;
+}
+.kraje{
+    position: absolute;
+    margin-top:20px;
+    margin-left:95px;
+   top: 300px;
+}
+.prawa2{
+    margin-left: 350px;
+    position: absolute;
+    top: 500px;
+}
+.prawa2formc{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.formularz2 input{
+    width:270px;
+    height:30px;
+    border-radius: 4px;
+    border:1px solid #cebdbd;
+    margin-top:1px;
+    margin-bottom: 10px;
+}
+.formularz2{
+    width: 264px;
+    height: 36px;
+    border-radius: 2px;
+    margin-top:90px;
+    fill: #000000;
+    stroke-width: 1;
+}
+.formularz2 p{
+    position:absolute;
+    top:450px;
+    margin-left: 20px;
+}
+.pusty{
+    margin-left:10px;
+    width:660px;
+    border-bottom:1px solid rgb(197, 196, 196);
+    top:445px;
+    position:absolute;
+}
+
+.selector{
+    background-image: url("../../assets/images/datapicker.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-origin: content-box;
+    background-size: 6%;
+    background-position-x: right 12px;
+}
+.lewa2{
+    position:absolute;
+    float:left;
+    top: 470px;
+}
+
+.zformularzy{
+    position: absolute;
+    float:left;
+    top: 820px;
+    margin-left:50px;
+}
+
+.nastepnaczesc{
+    position: absolute;
+    top: 800px;
+}
+
+mat-slider {
+    width: 300px;
+  }
+
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+  
+  //to tabsy
+  .tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    border-bottom: 4px solid rgb(0, 166, 255);
+  }
+  
+  .tabcontent {
+    display: block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tablinks:focus {
+    border-bottom:1.5px solid blue;
+}
+
+  div.active{
+    background-color: yellow;
+  }
+
+  .role p{
+    position: absolute;
+    width: 40px;
+    height: 18px;
+    left: 20px;
+    top: 130px;
+    font-family: Rubik;
+    font-size: 18px;
+    color: #325395;
+    text-decoration: rgb(50, 83, 149);
+
+  }
+  .role p span{
+    position: absolute;
+    width: 70px;
+    height: 16px;
+    font-family: Rubik;
+    font-size: 16px;
+    color: #5e92fc;
+    text-decoration: rgb(94, 146, 252);
+  }
+
+  hr.lina{
+    width: 914px;
+    height: 44px;
+    fill: #000000;
+    stroke-width: 1;
+  }
+
+
+  .create{
+    width: 72px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: #dbdde0;
+  }
+  .reac{
+    width: 64px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: #5e92fc;
+  }
+.update{
+    width: 77px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: #fabb2b;
+}
+.delatek{
+    width: 71px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: #dbdde0;
+}
+
+td button p{
+    width: 32px;
+    height: 11px;
+    font-family: Rubik;
+    font-size: 11px;
+    color: #252629;
+    text-decoration: rgb(37, 38, 41);
+}
+.role table button{
+    margin-left: 10px;
+    
+}
+
+.role table{
+    margin-top: 50px;
+    width: 100%;
+}
+.role table th{
+    padding-left: 50px;
+    border-bottom: 1px solid grey;
+}
+.role table td{
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #bab4b4;
+}
+.podlogs{
+    padding: 30px;
+}
+.le{
+    float: left;
+    margin-top:60px;
+    width:400px;
+    margin-left: 40px;
+}
+.le p{
+    margin-top:50px;
+    margin-left:50px;
+    font-size:20px;
+
+}
+.le span{
+    margin-top:-20px;
+    margin-left:55px;
+    font-weight: bold;
+    font-size:24px;
+}
+
+.pra{
+    float: right;
+    width: 362px;
+    height: 64px;
+    margin-top:-20px;
+}
+.pra select{
+    width: 362px;
+    height: 34px;
+}
+
+
+.lewa p{
+    margin-left:20px;
+}
+.formularz input{
+    width:270px;
+    height:30px;
+    border-radius: 4px;
+    border:1px solid #cebdbd;
+    margin-top:1px;
+    margin-bottom: 10px;
+}
+.lewaforma{
+    margin-top:30px;
+    margin-left: 35px;
+}
+
+.lewa2{
+    margin-top:50px;
+    margin-left: 40px;
+}
+
+.prawda{
+    background-color: yellow;
+}
+.tenlabel{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.selektormulti{
+    margin-top:60px;
+    margin-left:30px;
+}
+
+div#nameval, div#lastnameval, div#birthdayval, div#facebook, div#emailval, div#instagram, div#twitter{
+    color: red;
+    font-weight: bold;
+    background: #e2e2e2;
+    width: 230px;
+    position: relative;
+    z-index: 3;
+}
+
+.ui-datapicker{
+    z-index: 5;
+    position: relative;
+}
+
+ng-select#tenselekt{
+    width: 274px !important;
+}
+
+label p{
+    color: black;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: -18px;
+}
+
+input{
+    text-indent: 10px;
+  }
+
+
+  .modal-dialog{
+    padding: 200px;
+    z-index: 4;
+    position: relative;
+    background: yellow;
+  }
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
